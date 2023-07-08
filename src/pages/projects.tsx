@@ -64,7 +64,7 @@ const Projects: NextPage<Props> = (props) => {
   )
 
   return (
-    <Layout headTitle="Projects | Joshua Galit" metaDescription="My List of Projects">
+    <Layout headTitle="Projects | Snow" metaDescription="My List of Projects">
       <motion.div
         variants={routeAnimation}
         initial="initial"
