@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nikschaefer.com
+
+# Sitemaps
+Sitemap: https://nikschaefer.com/sitemap.xml

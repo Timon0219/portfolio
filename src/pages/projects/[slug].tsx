@@ -1,5 +1,3 @@
-'use client'
-
 import { Article } from "@components/article";
 import Layout from "@components/layout";
 import rehypePrism from "@mapbox/rehype-prism";
@@ -71,11 +69,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 	const paths = projects.map((project) => {
 		return {
 			params: {
-				slug: project.slug,
+				slug: project.slug.toString(),
 			},
 		};
 	});
-	console.log("-----------------------------:", paths)
+
 	return {
 		paths: paths,
 		fallback: false,
