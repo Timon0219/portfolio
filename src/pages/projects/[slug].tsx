@@ -1,3 +1,5 @@
+'use client'
+
 import { Article } from "@components/article";
 import Layout from "@components/layout";
 import rehypePrism from "@mapbox/rehype-prism";
