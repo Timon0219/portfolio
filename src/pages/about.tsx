@@ -45,10 +45,7 @@ export default function About(): JSX.Element {
 						I'm a Software Engineer with a passion for building
 					</h1>
 					<p>
-						With a versatile background spanning development,
-						design, and management, and a deep-rooted passion for
-						machine learning, I am focused on pursuing a future in
-						data science.
+					Highly skilled full-stack developer with 5+ years of experience designing and implementing web applications using modern frontend and backend technologies. Proficient in JavaScript, HTML, CSS, Python, and SQL. Strong experience with popular web frameworks such as React, Angular, Django, and Flask. Passionate about building scalable, secure, and user-friendly web applications.
 						<br />
 						<br />
 						These days, I'm busy working at a startup, managing my

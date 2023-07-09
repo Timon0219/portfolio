@@ -18,7 +18,7 @@ function Intro() {
 				viewport={{ once: true }}
 				className={clsx("title mx-auto font-semibold text-center")}
 			>
-				Hi. I'm Nik.
+				Hi. I'm Michael.
 				<br />
 				<span className="text-effect">A Developer.</span>{" "}
 			</motion.h1>

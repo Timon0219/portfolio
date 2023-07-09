@@ -22,7 +22,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 			<DefaultSeo
 				title="Portfolio"
 				description="I'm Michael John,  a driven lead software engineer and co-founder, dedicated to leveraging technology and education to create positive change."
-				titleTemplate="Nik Schaefer • %s"
+				titleTemplate="Michael John • %s"
 				openGraph={{
 					type: "website",
 					locale: "en",

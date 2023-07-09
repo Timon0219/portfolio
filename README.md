@@ -1,8 +1,8 @@
 <p align="center">
-<img width="150" src="https://nikschaefer.com/developer.svg" />
+<img width="150" src="https://snowportfolio.vercel.app/" />
 </p>
 
-<h2 align="center"><a href="https://nikschaefer.com/">Nik Schaefer</a></h2>
+<h2 align="center"><a href="https://snowportfolio.vercel.app/">Michael John</a></h2>
 
 <p align="center">Full Stack Developer</p>
 

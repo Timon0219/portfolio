@@ -11,16 +11,16 @@ export { GA_TRACKING_ID, IS_PRODUCTION, IS_TEST, IS_BROWSER };
 
 const socials = {
 	github: {
-		link: "https://github.com/NikSchaefer",
+		link: "https://github.com/sss-ojeda",
 		name: "GitHub",
 	},
 	linkedin: {
-		link: "https://www.linkedin.com/in/nikschaefer/",
+		link: "https://www.linkedin.com/in/snow961015/",
 		name: "LinkedIn",
 	},
 	email: {
-		link: "mailto:nikkschaefer@gmail.com",
-		email: "nikkschaefer@gmail.com",
+		link: "mailto:jorgihno.ojeda@gmail.com",
+		email: "jorgihno.ojeda@gmail.com",
 		name: "Email",
 	},
 };
