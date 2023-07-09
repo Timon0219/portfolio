@@ -1,144 +1,72 @@
-const colors = require('tailwindcss/colors')
-
 module.exports = {
-  mode: 'jit',
-  content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
-  darkMode: 'class', // or 'media' or 'class'
-  theme: {
-    fontFamily: {
-      inter: 'Inter, sans-serif',
-      satoshi: 'satoshi, sans-serif'
-    },
-    extend: {
-      colors: {
-        cyan: colors.cyan,
-        fuchsia: colors.fuchsia,
-        'dark-dim': '#111827',
-        'blue-twitter': '#1DA1F2',
-        grey: {
-          100: '#F5F7FA',
-          1000: '#1F2933'
-        }
-      },
-      fontSize: {
-        xxs: '.50rem'
-      },
-      typography(theme) {
-        return {
-          DEFAULT: {
-            css: {
-              pre: {
-                color: theme('colors.grey.1000'),
-                backgroundColor: theme('colors.grey.100')
-              },
-              'pre code::before': {
-                'padding-left': 'unset'
-              },
-              'pre code::after': {
-                'padding-right': 'unset'
-              },
-              code: {
-                color: '#DD1144',
-                fontWeight: '400',
-                'border-radius': '0.25rem'
-              },
-              'code::before': {
-                content: '""',
-                'padding-left': '0.25rem'
-              },
-              'code::after': {
-                content: '""',
-                'padding-right': '0.25rem'
-              }
-            }
-          },
-          dark: {
-            css: {
-              color: theme('colors.gray.300'),
-              '[class~="lead"]': {
-                color: theme('colors.gray.400')
-              },
-              strong: {
-                color: theme('colors.gray.100')
-              },
-              'ul > li::before': {
-                backgroundColor: theme('colors.gray.700')
-              },
-              hr: {
-                borderColor: theme('colors.gray.800')
-              },
-              blockquote: {
-                color: theme('colors.gray.100'),
-                borderLeftColor: theme('colors.gray.800')
-              },
-              h1: {
-                color: theme('colors.gray.100')
-              },
-              h2: {
-                color: theme('colors.gray.100')
-              },
-              h3: {
-                color: theme('colors.gray.100')
-              },
-              h4: {
-                color: theme('colors.gray.100')
-              },
-              code: {
-                color: theme('colors.gray.100')
-              },
-              'a code': {
-                color: theme('colors.gray.100')
-              },
-              pre: {
-                color: theme('colors.gray.200'),
-                backgroundColor: theme('colors.gray.800')
-              },
-              thead: {
-                color: theme('colors.gray.100'),
-                borderBottomColor: theme('colors.gray.700')
-              },
-              'tbody tr': {
-                borderBottomColor: theme('colors.gray.800')
-              }
-            }
-          }
-        }
-      },
-      keyframes: {
-        blob: {
-          '0%': {
-            transform: 'translate(0px, 0px) scale(1)'
-          },
-          '33%': {
-            transform: 'translate(30px, -50px) scale(1.1)'
-          },
-          '66%': {
-            transform: 'translate(-20px, 20px) scale(0.9)'
-          },
-          '100%': {
-            transform: 'translate(0px, 0px) scale(1)'
-          }
-        }
-      },
-      animation: {
-        blob: 'blob 7s infinite'
-      }
-    }
-  },
-  variants: {
-    scrollbar: ['dark'],
-    extend: {
-      typography: ['dark'],
-      opacity: ['disabled'],
-      backgroundColor: ['group-focus'],
-      scale: ['active', 'group-hover'],
-      ringOffsetWidth: ['hover', 'active']
-    }
-  },
-  plugins: [
-    require('tailwind-scrollbar'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/line-clamp'),
-    require('@tailwindcss/typography')
-  ]
-}
+	content: ["./src/**/*.{js,ts,jsx,tsx}"],
+	darkMode: "class",
+	theme: {
+		extend: {
+			fontFamily: {
+				sans: ["Roboto", "Helvetica", "Arial", "sans-serif"],
+				nunito: ["Nunito", "sans-serif"],
+				inter: ["Inter", "sans-serif"],
+			},
+			animation: {
+				wave: "wave 1.25s linear infinite alternate",
+				popinout: "popup 5s",
+				fadein: "fadein 0.2s ease",
+			},
+			keyframes: {
+				wave: {
+					"0%, 100%": { transform: "rotate(0deg)" },
+					"50%": { transform: "rotate(-5deg)" },
+				},
+				popup: {
+					"0%, 100%": {
+						transform: "translateY(0px) translateX(-50%)",
+					},
+					"10%, 90%": {
+						transform: "translateY(180px) translateX(-50%)",
+					},
+				},
+				fadein: {
+					"0%": { opacity: 0, "margin-top": "1rem" },
+					"100%": { opacity: 10, "margin-top": "0.75rem" },
+				},
+			},
+			transitionTimingFunction: {
+				expo: "cubic-bezier(0.645, 0.045, 0.355, 1);",
+			},
+			colors: {
+				link: {
+					DEFAULT: "#0366D6",
+				},
+				primary: {
+					100: "#f2e1fb",
+					200: "#e5c4f6",
+					300: "#d7a6f2",
+					400: "#ca89ed",
+					500: "#bd6be9",
+					600: "#9756ba",
+					700: "#71408c",
+					800: "#4c2b5d",
+					900: "#26152f",
+					DEFAULT: "#bd6be9",
+				},
+				secondary: {
+					DEFAULT: "#10101a",
+					100: "#cfcfd1",
+					200: "#9f9fa3",
+					300: "#707076",
+					400: "#404048",
+					500: "#10101a",
+					600: "#0d0d15",
+					700: "#0a0a10",
+					800: "#06060a",
+					900: "#030305",
+				},
+			},
+		},
+	},
+	variants: {
+		extend: {},
+	},
+	plugins: [require("@tailwindcss/typography")],
+};

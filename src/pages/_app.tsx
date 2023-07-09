@@ -1,43 +1,61 @@
-import '~/styles/global.css'
-import type { AppProps } from 'next/app'
-import { nhost } from '~/lib/nhost-client'
-import { ThemeProvider } from 'next-themes'
-import NextProgress from '~/lib/next-progress'
-import { NhostNextProvider } from '@nhost/nextjs'
-import { Slide, ToastContainer } from 'react-toastify'
-import { NhostApolloProvider } from '@nhost/react-apollo'
-import MessengerCustomerChat from 'react-messenger-customer-chat'
+import { pageview } from "@lib/gtag";
+import { DefaultSeo } from "next-seo";
+import type { AppProps } from "next/app";
+import Head from "next/head";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import "../styles/globals.css";
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
-  return (
-    <NhostNextProvider nhost={nhost} initial={pageProps.nhostSession}>
-      <NhostApolloProvider nhost={nhost}>
-        <ThemeProvider attribute="class">
-          <NextProgress />
-          <ToastContainer
-            position="top-right"
-            autoClose={3000}
-            hideProgressBar={true}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="colored"
-            transition={Slide}
-          />
-          <Component {...pageProps} />
-          {process.env.NODE_ENV === 'production' && (
-            <MessengerCustomerChat
-              pageId={process.env.MESSENGER_PAGE_ID}
-              appId={process.env.MESSENGER_APP_ID}
-            />
-          )}
-        </ThemeProvider>
-      </NhostApolloProvider>
-    </NhostNextProvider>
-  )
+export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+	const router = useRouter();
+	useEffect(() => {
+		const handleRouteChange = (url: unknown) => {
+			pageview(url);
+		};
+		router.events.on("routeChangeComplete", handleRouteChange);
+		return () => {
+			router.events.off("routeChangeComplete", handleRouteChange);
+		};
+	}, [router.events]);
+	return (
+		<>
+			<DefaultSeo
+				title="Portfolio"
+				description="I'm Michael John,  a driven lead software engineer and co-founder, dedicated to leveraging technology and education to create positive change."
+				titleTemplate="Nik Schaefer • %s"
+				openGraph={{
+					type: "website",
+					locale: "en",
+					url: "https://nikschaefer.com/",
+					site_name: "Michael John's Portfolio",
+					profile: {
+						firstName: "Michael",
+						lastName: "John",
+						username: "Snow",
+					},
+				}}
+			/>
+			<Head>
+				<link
+					rel="apple-touch-icon"
+					sizes="180x180"
+					href="/apple-touch-icon.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="32x32"
+					href="/favicon-32x32.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="16x16"
+					href="/favicon-16x16.png"
+				/>
+				<link rel="manifest" href="/site.webmanifest" />
+			</Head>
+			<Component {...pageProps} />
+		</>
+	);
 }
-
-export default MyApp

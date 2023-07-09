@@ -1,100 +1,69 @@
-import moment from 'moment'
-import Image from 'next/image'
-import getReadTime from '~/utils/read-time'
-import Layout from '~/layouts/defaultLayout'
-import hydrate from 'next-mdx-remote/hydrate'
-import { getAllPosts } from '~/utils/blogFiles'
-import { classNames } from '~/utils/classNames'
-import SponsorCard from '~/components/SponsorCard'
-import renderToString from 'next-mdx-remote/render-to-string'
-import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
+import { Article } from "@components/article";
+import Layout from "@components/layout";
+import { postFilePaths, POSTS_PATH } from "@lib/mdxUtils";
+import rehypePrism from "@mapbox/rehype-prism";
+import fs from "fs";
+import matter from "gray-matter";
+import { GetStaticProps, GetStaticPaths } from "next";
+import { serialize } from "next-mdx-remote/serialize";
+import { NextSeo } from "next-seo";
+import path from "path";
 
-type Props = {
-  title: string
-  publishedAt: string
-  content: any
-  slug: string
-  summary: string
-  readTime: string
-}
+type receivingData = {
+	source: never;
+	frontMatter: {
+		title: string;
+		author: string;
+		datePub: string;
+		dateEdit: string;
+		description: string;
+	};
+};
 
-export const getStaticPaths: GetStaticPaths = () => {
-  const allPosts = getAllPosts()
-  return {
-    paths: allPosts.map(({ slug }) => ({
-      params: {
-        slug
-      }
-    })),
-    fallback: false
-  }
+export default function Slug({
+	source,
+	frontMatter,
+}: receivingData): JSX.Element {
+	return (
+		<Layout>
+			<NextSeo title={frontMatter.title} />
+			<Article
+				source={source}
+				title={frontMatter.title}
+				tags="#tailwindcss"
+				date={frontMatter.datePub}
+			/>
+		</Layout>
+	);
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { slug } = params!
-  const allPosts = getAllPosts()
+	const postFilePath = path.join(POSTS_PATH, `${String(params?.slug)}.mdx`);
+	const source = fs.readFileSync(postFilePath);
 
-  const { data, content }: any = allPosts.find((post) => post.slug === slug)
-  const mdxSource = await renderToString(content)
-  const readTime = getReadTime(content)
+	const { content, data } = matter(source);
+	const mdxSource = await serialize(content, {
+		scope: data,
+		mdxOptions: {
+			rehypePlugins: [rehypePrism],
+		},
+	});
+	return {
+		props: {
+			source: mdxSource,
+			frontMatter: data,
+		},
+	};
+};
 
-  return {
-    props: {
-      ...data,
-      content: mdxSource,
-      readTime
-    }
-  }
-}
+export const getStaticPaths: GetStaticPaths = async () => {
+	const paths = postFilePaths
+		// eslint-disable-next-line require-unicode-regexp
+		.map((path) => path.replace(/\.mdx?$/, ""))
+		.map((slug) => ({ params: { slug } }));
 
-const BlogPost: NextPage<Props> = (props) => {
-  const { title, publishedAt, content, summary, readTime } = props
-
-  const hydratedContent = hydrate(content)
-  const formattedData = moment(publishedAt).format('MMMM DD, YYYY')
-
-  return (
-    <Layout headTitle={title} metaDescription={summary}>
-      <div className="w-full max-w-3xl mx-auto px-4 space-y-8">
-        <div className="mt-4 md:mt-16">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-center max-w-xl mx-auto">
-            {title}
-          </h1>
-        </div>
-        <div className="flex items-center space-x-2 pb-8 w-full">
-          <div className="flex-shrink-0">
-            <Image
-              className="rounded-full"
-              src="/images/my-avatar.jpg"
-              alt="My Profile Picture"
-              width={28}
-              height={28}
-              layout="intrinsic"
-            />
-          </div>
-          <div className="flex flex-wrap items-center justify-between w-full">
-            <h3 className="text-sm text-gray-700 dark:text-gray-400 tracking-tight">
-              Joshua Galit / {formattedData}
-            </h3>
-            <div className="flex items-center">
-              <div
-                className={classNames(
-                  'flex items-center space-x-1.5 cursor-default',
-                  'text-gray-500 dark:text-gray-400  text-xs'
-                )}
-              >
-                <span className="font-medium line-clamp-1">{readTime} min read</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="prose dark:prose-dark prose-pink">{hydratedContent}</div>
-        <div className="pb-28">
-          <SponsorCard />
-        </div>
-      </div>
-    </Layout>
-  )
-}
-
-export default BlogPost
+	return {
+		paths,
+		fallback: false,
+	};
+};

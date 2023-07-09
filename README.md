@@ -1,32 +1,73 @@
-## Table of contents
+<p align="center">
+<img width="150" src="https://nikschaefer.com/developer.svg" />
+</p>
 
-- [General Info](#general-info)
-- [Technologies](#technologies)
-- [Setup](#setup)
+<h2 align="center"><a href="https://nikschaefer.com/">Nik Schaefer</a></h2>
 
-## General Info
+<p align="center">Full Stack Developer</p>
 
-This is my personal portfolio site; which includes my personal information, blog, projects and contact page etc.
-Feel free to test my project if you want to use it either for educational purposes or a reference for you next project.
+<img src="https://nikschaefer.com/site.JPG" />
 
-## Technologies
+_Strained eyes? There's DarkMode too :p_
 
-Project is created with:
+## 🚀 Quick start
 
-- Next.js
-- Tailwindcss
-- TypeScript
-- GraphQL version
-- Framer-motion version
-- emailjs-com version
-- Nhost serverless backend
-- Messenger SDK
+\*Run the site locally
 
-## Setup
+### Step 1: Clone The Repo
 
-To run this project, install it locally using npm:
+Fork the repository. then clone the repo locally by doing -
 
 ```
-$ npm install || yarn install
-$ npm run dev || yarn dev
+git clone https://github.com/NikSchaefer/nikschaefer.com
 ```
+
+### Step 2: Install Dependencies
+
+cd into the directory
+
+```
+cd nikschaefer.com
+```
+
+install all the dependencies
+
+```
+npm install
+```
+
+### Step 3: Start Development Server
+
+Then start the development Server
+
+```
+npm run dev
+```
+
+After running the development server the site should be running on
+https://localhost:3000
+
+## 📂 What's inside?
+
+A quick look at the folder structure of this project.
+
+```
+├── content
+│   ├───blog
+│   ├───projects
+│   └───snippets
+├── public
+└── src
+    ├───components
+    ├───lib
+    ├───pages
+    ├───styles
+```
+
+## 🛠️ Tools Used
+
+1. NextJS
+1. Tailwind CSS for Styling
+1. Vercel to Deploy
+
+Made with ❤️ and NextJS

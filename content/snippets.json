@@ -1,0 +1,22 @@
+[
+	{
+		"title": "PostgreSQL database in a docker container",
+		"tag": "docker",
+		"link": "postgres"
+	},
+	{
+		"title": "AWS Lambda build zip file",
+		"tag": "lambda",
+		"link": "aws-lambda"
+	},
+	{
+		"title": "Matplotlib First 25 images",
+		"tag": "matplotlib",
+		"link": "plt-show"
+	},
+	{
+		"title": "Deauthentication attack with a wordlist",
+		"tag": "wifi",
+		"link": "deauth"
+	}
+]
