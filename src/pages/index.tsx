@@ -7,31 +7,33 @@ import { motion } from "framer-motion";
 import Projects from "@components/projects";
 import Timeline from "@components/work";
 import CTA from "@components/cta";
+import { TypeAnimation } from "react-type-animation";
 
 function Intro() {
 	return (
-		<section className="pt-[5em] container mx-auto">
-			<motion.h1
-				initial={{ y: -10, opacity: 0 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ duration: 0.2, delay: 0.1 }}
-				viewport={{ once: true }}
-				className={clsx("title mx-auto font-semibold text-center")}
-			>
-				Hi. I'm Michael.
-				<br />
-				<span className="text-effect">A Developer.</span>{" "}
-			</motion.h1>
+		<section className="flex flex-col items-center justify-center pt-[5em] container mx-auto">
+			<TypeAnimation
+				sequence={[
+					"Hi, I'm Andres",
+					1000,
+					"A full stack developer",
+					1000,
+				]}
+				speed={200}
+				repeat={Infinity}
+				className={clsx(
+					"title mx-auto font-semibold text-center self-stretch"
+				)}
+			/>
 			<motion.p
 				initial={{ y: -10, opacity: 0 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.2, delay: 0.3 }}
 				viewport={{ once: true }}
-				className="mt-[2em] h4 text-center mx-auto w-[90%] max-w-[750px]"
+				className="mt-[2em] h3 text-center mx-auto w-[90%] max-w-[750px]"
 			>
-				As a driven lead software engineer and co-founder, I am
-				dedicated to leveraging technology and education to create
-				positive change and shape a more equitable future.
+				As a proficient full stack developer I always try to contribute
+				to the new era of web technologies.
 			</motion.p>
 		</section>
 	);

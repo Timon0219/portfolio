@@ -61,7 +61,7 @@ export default function Intro() {
 					.
 				</motion.p>
 				<a
-					href="mailto:nikkschaefer@gmail.com"
+					href="mailto:andresfelipe.lopez0219@gmail.com"
 					aria-label="Get in touch"
 					className="relative my-5 p-0.5 inline-flex items-center justify-center font-bold overflow-hidden group rounded-md"
 				>

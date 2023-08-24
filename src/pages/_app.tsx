@@ -3,34 +3,57 @@ import { DefaultSeo } from "next-seo";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
+import GLOBE from "vanta/dist/vanta.globe.min.js";
+import * as THREE from "three";
 import "../styles/globals.css";
 
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 	const router = useRouter();
+	const [vantaEffect, setVantaEffect] = useState(0);
+	const vantaRef = useRef(null);
 	useEffect(() => {
 		const handleRouteChange = (url: unknown) => {
 			pageview(url);
 		};
 		router.events.on("routeChangeComplete", handleRouteChange);
+
+		if (!vantaEffect) {
+			setVantaEffect(
+				GLOBE({
+					el: vantaRef.current,
+					THREE: THREE,
+					mouseControls: true,
+					touchControls: true,
+					gyroControls: false,
+					minHeight: 200.0,
+					minWidth: 200.0,
+					scale: 1.0,
+					scaleMobile: 1.0,
+					color2: 0xffffff,
+				})
+			);
+		}
 		return () => {
 			router.events.off("routeChangeComplete", handleRouteChange);
+			if (vantaEffect) vantaEffect.destroy();
 		};
-	}, [router.events]);
+	}, [router.events, vantaEffect]);
 	return (
 		<>
+			<div ref={vantaRef} className="vanta"></div>
 			<DefaultSeo
 				title="Portfolio"
-				description="I'm Michael John,  a driven lead software engineer and co-founder, dedicated to leveraging technology and education to create positive change."
-				titleTemplate="Michael John • %s"
+				description="I'm Andres Lopez, a proficient full stack developer with 8 years of experienc as an IT professional."
+				titleTemplate="Andres Lopez • %s"
 				openGraph={{
 					type: "website",
 					locale: "en",
-					url: "https://nikschaefer.com/",
-					site_name: "Michael John's Portfolio",
+					url: "https://snowportfolio-skpq.vercel.app/",
+					site_name: "Andres Lopez's Portfolio",
 					profile: {
-						firstName: "Michael",
-						lastName: "John",
+						firstName: "Andres",
+						lastName: "Lopez",
 						username: "Snow",
 					},
 				}}

@@ -33,7 +33,7 @@ export default class MyDocument extends Document {
 						}}
 					/>
 				</Head>
-				<body className="bg-secondary text-gray-400">
+				<body className="bg-secondary text-white">
 					<Main />
 					<NextScript />
 				</body>

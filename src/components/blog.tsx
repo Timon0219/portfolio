@@ -9,13 +9,11 @@ function Post(props: { blog: Blog }): JSX.Element {
 			<Link
 				href={props.blog.link}
 				aria-label="Blog Link"
-				className={clsx(
-					"text-2xl capitalize text-effect"
-				)}
+				className={clsx("text-2xl capitalize text-effect")}
 			>
 				{props.blog.title}
 			</Link>
-			<p className="my-1 text-sm text-gray-600">{props.blog.date}</p>
+			<p className="my-1 text-sm text-white">{props.blog.date}</p>
 		</div>
 	);
 }

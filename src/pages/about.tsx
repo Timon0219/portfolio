@@ -20,19 +20,10 @@ export default function About(): JSX.Element {
 						"title mx-auto text-effect font-semibold text-center"
 					)}
 				>
-					I'm John.
+					I'm Andres Lopez.
 				</motion.h1>
 			</section>
-			<section className="flex flex-col items-center lg:grid lg:grid-cols-10 pt-[3em] w-[90%] max-w-[1000px] container mx-auto">
-				<motion.img
-					viewport={{ once: true }}
-					initial={{ y: -10, opacity: 0 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.2, delay: 0.3 }}
-					className="col-span-4 w-[80%] mx-auto lg:w-full"
-					src="/developer.svg"
-				/>
-				<div className="col-span-1" />
+			<section className=" pt-[3em] w-[90%] max-w-[1000px] container mx-auto">
 				<motion.div
 					viewport={{ once: true }}
 					initial={{ y: -10, opacity: 0 }}
@@ -40,17 +31,29 @@ export default function About(): JSX.Element {
 					transition={{ duration: 0.2, delay: 0.5 }}
 					className="w-[90%] mx-auto lg:w-full flex flex-col col-span-5"
 				>
-					<span className="my-2">--- about me in O(1) ---</span>
 					<h1 className="font-semibold text-effect mb-10 ">
-						I'm a Software Engineer with a passion for building
+						I'm a proficient web3 developer with a passion for
+						building
 					</h1>
 					<p>
-					Highly skilled full-stack developer with 5+ years of experience designing and implementing web applications using modern frontend and backend technologies. Proficient in JavaScript, HTML, CSS, Python, and SQL. Strong experience with popular web frameworks such as React, Angular, Django, and Flask. Passionate about building scalable, secure, and user-friendly web applications.
+						An adept web3 developer with over 9 years of experience,
+						proficient in crafting, building, and implementing
+						comprehensive Blockchain and Full Stack solutions for
+						businesses of all scales. Boasting a rich history of
+						initiating projects right from the outset, utilizing
+						JavaScript, React.js, Node.js, Python, and Solidity, I
+						am a performance-oriented professional. My expertise
+						encompasses a deep understanding of blockchain
+						fundamentals, architectural intricacies, cryptography,
+						and chain management solutions. Beyond technical
+						prowess, I excel in orchestrating large-scale projects,
+						leading diverse teams, and effectively addressing
+						unforeseen technical challenges. My communication
+						finesse serves as a catalyst, transforming strategic
+						visions into actionable realities. This prowess is
+						highlighted by seamless collaborations with management
+						teams, stakeholders, and esteemed C-level executives.
 						<br />
-						<br />
-						These days, I'm busy working at a startup, managing my
-						nonprofit, and balancing my studies as a dual enrollment
-						student.
 					</p>
 					<div className="pt-[2em] flex-col sm:flex-row flex gap-2 h6 font-semibold">
 						<motion.a
@@ -107,47 +110,10 @@ export default function About(): JSX.Element {
 				className="pt-[10em] h4 mx-auto max-w-[700px] w-[90%]"
 				id="work"
 			>
-				<h5 className="my-2">--- about me in O(n log (n)) ---</h5>
-				<h1 className="title1 font-semibold text-effect mb-10 ">
-					Let's collaborate on something awesome.
+				<h1 className="title1 font-semibold text-effect mb-10 text-center ">
+					Professional Experience
 				</h1>
-				<p className="leading-[32px] text-gray-100">
-					I'm a coding enthusiast on a mission to shape the future
-					with technology. As a Software Engineer, I thrive on
-					building innovative solutions and driving positive change.
-					<br />
-					<br />
-					With a diverse background in development, design, and
-					management, I'm a well-rounded problem solver ready to
-					tackle the challenges of today's digital landscape. My true
-					passion lies in data science, where I see immense potential
-					for transformative outcomes.
-					<br />
-					<br />
-					Currently, I'm juggling multiple roles: working at a
-					startup, managing a nonprofit, and pursuing studies as a
-					dual enrollment student. This fast-paced lifestyle keeps me
-					on my toes and fuels my hunger for knowledge and growth.
-					<br />
-					<br />
-					I began my coding journey at a 13, building small games
-					using p5.js. Since then, my passion for technology has only
-					intensified. I believe in its power to shape a brighter,
-					more equitable future. And I'm here to make that vision a
-					reality.
-					<br />
-					<br />
-					When I'm not immersed in code, you can find me at the gym,
-					reading a book, or scuba diving in the ocean.
-					<br />
-					<br />
-					If you share my drive to leverage technology, advance
-					education, and create positive change, I'd love to connect.
-					Together, we can build a better future through
-					collaboration, innovation, and a shared passion for making a
-					meaningful difference. Let's shape the world, one line of
-					code at a time.
-				</p>
+				<h2 className="==AppRecord=="></h2>
 			</motion.section>
 		</Layout>
 	);

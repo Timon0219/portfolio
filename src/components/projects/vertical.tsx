@@ -25,9 +25,8 @@ export default function VerticalProject({
 			<div className="gap-5 p-6 w-full flex flex-col justify-between ">
 				<h2 className="font-semibold text-white">{title}</h2>
 				<p>{text}</p>
-				<Link
+				<div
 					className="flex items-center gap-3 group text-primary"
-					href={`/projects/${slug}`}
 					aria-label={`Learn more about ${title}`}
 				>
 					{short}{" "}
@@ -35,7 +34,7 @@ export default function VerticalProject({
 						<ChevronRight className="group-hover:hidden" />
 						<ArrowRight className="hidden group-hover:block" />
 					</span>
-				</Link>
+				</div>
 			</div>
 			<div className="w-full flex items-center pb-5 my-auto">
 				<img

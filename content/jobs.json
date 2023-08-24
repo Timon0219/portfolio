@@ -1,19 +1,19 @@
 [
 	{
-		"title": "Lead Developer",
-		"company": "Noveltor",
+		"title": "Full stack Blochchain Developer",
+		"company": "AppRecode",
 		"location": "Remote",
-		"range": "Jan 2021 • Present",
-		"url": "https://noveltor.com",
-		"logo": "https://media.licdn.com/dms/image/D560BAQE9M-gYKq0M0A/company-logo_100_100/0/1665757058542?e=1694649600&v=beta&t=fE1cuL4Vp-PpMYO57QeOoRzjQJmV8HsD7tHClQI8rZM",
+		"range": "Oct 2021 • May 2023",
+		"url": "https://apprecode.com/",
+		"logo": "/mark/apprecode.jpg",
 		"content": [
-			"Led development of a full-stack app at Noveltor, using various frameworks and languages.",
-			"Achieved 99% uptime through Serverless-oriented architecture and performance optimization.",
-			"Tested application thoroughly to ensure optimal functionality and user experience.",
-			"Collaborated closely with designers and stakeholders to ensure seamless development and delivery."
+			"Constructed a wide modular Python trading engine to auto- rebalance AppRecode 's $13M portfolio utilizing private and public market makers on the Ethereum network",
+			"Built 3 reusable cross-chain libraries and expanded the user base of the DeFi protocol by 37%",
+			"Completed 5 decentralized social media web applications using React, CSS, Bootstrap and web3.js/ethers.js based on Lens protocol for integrating Ethereum",
+			"Built a private blockchain using Hyperledger Fabric 1.0 that enhanced data security and reduced risk exposure by 92%"
 		],
 		"tools": [
-			"Golang",
+			"Solidity",
 			"AWS",
 			"React",
 			"Typescript",
@@ -24,19 +24,21 @@
 		]
 	},
 	{
-		"title": "Chief Financial Officer / Co-Founder",
-		"company": "Arafa Tech Foundation",
+		"title": "Python Data Scientist",
+		"company": "Clevertech",
 		"location": "Remote",
-		"range": "Feb 2023 • Present",
-		"url": "https://arafa.tech",
-		"logo": "https://arafa.tech/logos/main.png",
+		"range": "Aug 2020 • Sep 2021",
+		"url": "https://clevertech.biz/",
+		"logo": "/mark/clevertech.jpg",
 		"content": [
-			"Implemented coding education and mentorship programs at Arafa Tech, driving successful outcomes.",
-			"Led a team to develop and execute programs, resulting in significant positive outcomes for students.",
-			"Oversaw operations, ensuring seamless coordination between stakeholders for program execution.",
-			"Mentored and supported students with personalized learning plans to overcome tech challenges."
+			"Improved the accuracy of predicted prices by 21%",
+			"Upgraded data screaming processes for a 18% reduction in redundancy",
+			"Increased the usage and adoption of AI in 14 departments by implementing RESTful APIs to surface machine learning predictions.",
+			"Formulated an anomaly detection framework for 7 digital channels of Clevertech, reducing monthly loss avoidance by $21K"
 		],
 		"tools": [
+			"python",
+			"Node.js",
 			"Javascript",
 			"React",
 			"DevOps",
@@ -47,28 +49,23 @@
 		]
 	},
 	{
-		"title": "Full Stack Software Engineer",
-		"company": "Kumon North America Inc.",
+		"title": "React Software Engineer",
+		"company": "Litmus",
 		"location": "Remote",
-		"range": "Nov 2022 • Present",
-		"url": "https://www.kumon.com/",
-		"logo": "https://media.licdn.com/dms/image/C4D0BAQGsKZtRU3ImPA/company-logo_100_100/0/1572375713415?e=1694649600&v=beta&t=03bvHXjNuTd-b2LVwRMupeARK0bIxLaCnXEU5gs_ctk",
+		"range": "May 2015 • Jul 2017",
+		"url": "https://www.litmus.com/",
+		"logo": "/mark/litmus.jpg",
 		"content": [
-			"Collaborated with team members and stakeholders to develop and deploy scalable software solutions.",
-			"Designed and maintained user-friendly front-end interfaces using React.js.",
-			"Developed and integrated back-end components using Node.js and PostgreSQL for optimal performance.",
-			"Stayed current with industry trends and technologies, incorporating emerging best practices and tools."
+			"Completed 20+ front-end and back-end applications utilizing React.js, Node.js, and Typescript",
+			"Directed time-sensitive updates, such as changing content and upgrading databases."
 		],
 		"tools": [
 			"React",
 			"Typescript",
 			"Javascript",
-			"Golang",
-			"CI/CD(Vercel)",
+			"AWS",
 			"Git(GitHub)",
 			"Node.js",
-			"PostgreSQL",
-			"CSS-in-JS",
 			"Styled-Components",
 			"CSS",
 			"HTML",
@@ -76,28 +73,6 @@
 			"Docker",
 			"Next.js",
 			"Webpack"
-		]
-	},
-	{
-		"title": "Web Developer Intern",
-		"company": "The Esport Company",
-		"location": "Remote",
-		"range": "September • December 2020",
-		"url": "https://www.theesportcompany.com/",
-		"logo": "https://media.licdn.com/dms/image/C560BAQErjTFd3r0u3A/company-logo_100_100/0/1670270887176?e=1694649600&v=beta&t=gqicr9ZWBRS1kkTsBLCkLPWim3ix5Osl4j4tCxsE64k",
-		"content": [
-			"Leveraged skills in WordPress, Python, and Django to create and implement custom features and functionality.",
-			"Collaborated with other developers, designers, and stakeholders to ensure timely and high-quality delivery of the website."
-		],
-		"tools": [
-			"Wordpress",
-			"CSS",
-			"SCSS",
-			"Javascript",
-			"Accessibility",
-			"HTML",
-			"Python",
-			"Django"
 		]
 	}
 ]

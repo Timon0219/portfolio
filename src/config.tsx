@@ -11,16 +11,16 @@ export { GA_TRACKING_ID, IS_PRODUCTION, IS_TEST, IS_BROWSER };
 
 const socials = {
 	github: {
-		link: "https://github.com/sss-ojeda",
+		link: "https://github.com/AndresSnow0219",
 		name: "GitHub",
 	},
 	linkedin: {
-		link: "https://www.linkedin.com/in/snow961015/",
+		link: "https://www.linkedin.com/in/andresfelipe-lopez/",
 		name: "LinkedIn",
 	},
 	email: {
-		link: "mailto:jorgihno.ojeda@gmail.com",
-		email: "jorgihno.ojeda@gmail.com",
+		link: "mailto:andresfelipe.lopez0219@gmail.com",
+		email: "andresfelipe.lopez0219@gmail.com",
 		name: "Email",
 	},
 };
@@ -34,7 +34,7 @@ type HeaderLink = {
 const HeaderLinks: HeaderLink[] = [
 	{
 		link: "/",
-		title: "Hub",
+		title: "Home",
 		func: () => {
 			return <AiOutlineHome className="m-2" size="20px" />;
 		},
@@ -78,8 +78,7 @@ const allBlogs: Blog[] = [
 		title: "What makes a University Life Ideal? A Statistical Perspective",
 		link: "/projects/university-ideal-life",
 		image: "/blog/mlops.webp",
-		description:
-			"",
+		description: "",
 		min: 3,
 		date: "July 2023",
 		type: ["Machine Learning"],

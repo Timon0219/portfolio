@@ -75,16 +75,16 @@ export default function Main(): JSX.Element {
 							</div>
 							<div className="flex items-center">
 								<a
-									href="mailto:jorgihno.ojeda@gmail.com"
+									href="mailto:andresfelipe.lopez0219@gmail.com"
 									className="text-effect hover:cursor-pointer"
 								>
-									jorgihno.ojeda@gmail.com
+									andresfelipe.lopez0219@gmail.com
 								</a>
 								<button
 									className="ml-2 hover:cursor-pointer"
 									onClick={() => {
 										navigator.clipboard.writeText(
-											"nikkschaefer@gmail.com"
+											"andresfelipe.lopez0219@gmail.com"
 										);
 									}}
 								>
@@ -96,14 +96,7 @@ export default function Main(): JSX.Element {
 							</div>
 						</div>
 						<div className="flex items-center gap-1">
-							© {new Date().getFullYear()} Michael John •{" "}
-							<a
-								href="https://github.com/NikSchaefer/nikschaefer.com/blob/master/src/components/footer.tsx"
-								className="hover:text-primary duration-100 transition-colors"
-							>
-								{" "}
-								Edit this text
-							</a>
+							© {new Date().getFullYear()} Andres Lopez{" "}
 						</div>
 					</li>
 					<Column title="Here" col={Col3} />

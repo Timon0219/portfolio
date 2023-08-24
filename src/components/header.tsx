@@ -66,7 +66,22 @@ export default function Main(): JSX.Element {
 									{value.title}{" "}
 									{index === 0 && (
 										<motion.span className="text-xs font-semibold text-primary rounded italic py-[2px] border-primary/30 border-2 px-[7px] ml-1">
-											/
+											<svg
+												enable-background="new 0 0 24 512"
+												height="24px"
+												id="Layer_1"
+												version="1.1"
+												viewBox="0 0 512 512"
+												width="24px"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g>
+													<path
+														d="M259.801,17.598L2.337,220.544l34.9,41.435l28.38-21.694c0,0,33.763,179.882,33.763,217.234h318.916   c-0.107-36.357,33.542-215.3,33.542-215.3l19.634,15.382l37.105-41.463L259.801,17.598z M255.471,310.683   c-34.577,0-62.581-28.036-62.581-62.583c0-34.587,28.004-62.591,62.581-62.591c34.557,0,62.582,28.004,62.582,62.591   C318.053,282.646,290.028,310.683,255.471,310.683z"
+														fill="#ffffff"
+													/>
+												</g>
+											</svg>
 										</motion.span>
 									)}
 								</Link>
