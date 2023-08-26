@@ -7,7 +7,6 @@ import { useState, useRef, useEffect } from "react";
 import GLOBE from "vanta/dist/vanta.globe.min.js";
 import * as THREE from "three";
 import "../styles/globals.css";
-
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 	const router = useRouter();
 	const [vantaEffect, setVantaEffect] = useState(0);
@@ -36,7 +35,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 		}
 		return () => {
 			router.events.off("routeChangeComplete", handleRouteChange);
-			if (vantaEffect) vantaEffect.destroy();
+			if (vantaEffect) setVantaEffect(0);
 		};
 	}, [router.events, vantaEffect]);
 	return (

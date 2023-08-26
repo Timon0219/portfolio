@@ -1,47 +1,47 @@
 [
 	{
-		"title": "MakiSwap",
-		"github": "",
+		"title": "Quotes Generation",
+		"github": "https://github.com/NikSchaefer/Quotes-Generation",
 		"external": "",
 		"tech": ["Pytorch", "Python", "Numpy"],
 		"slug": "quotes-generation",
-		"text": "Makiswap is a automated market maker (AMM) on HECO (Huobi Chain) that offers fast transaction time, cheap gass fees and liquidity for tokens that run on HECO",
-		"image": "/project/makiswap.jpg",
-		"short": "...more"
+		"text": "Creating captivating quotes from a single word input using the power of AI and Mathematics",
+		"image": "/project/qgt-1.png",
+		"short": "Meet QGT-2"
 	},
 	{
-		"title": "Maxos",
-		"github": "",
-		"external": "",
+		"title": "Developer Discords",
+		"github": "https://github.com/NikSchaefer/dev-discords",
+		"external": "https://dev-discords.nikschaefer.com",
 		"tech": ["React", "Typescript", "NextJS", "Styled Components"],
-		"text": "Maxos uses DeFi to improve the global supply of savings and credit",
+		"text": "An online collection of developer related discord servers — find your next community!",
 		"slug": "dev-discords",
-		"image": "/project/maxos.jpg",
-		"short": "...more"
+		"image": "/project/discords.png",
+		"short": "Discover Dev Discords"
 	},
 	{
-		"title": "Certik",
-		"github": "",
+		"title": "University Life Analysis",
+		"github": "https://github.com/NikSchaefer/university-ideal-life",
 		"external": "",
 		"tech": ["Tensorflow", "Python", "Numpy"],
 		"slug": "university-ideal-life",
-		"text": "Web3's leading smart contract auditor and provides a comprehensive suite of tools to secure the industry at scale.",
-		"image": "/project/certik.jpg",
-		"short": "...more"
+		"text": "A statistical analysis and neural network used to analyze and predict student satisfaction and stress levels",
+		"image": "/project/data.svg",
+		"short": "See the Data"
 	},
 	{
-		"title": "NX",
-		"github": "",
+		"title": "Critical Role NLP",
+		"github": "https://github.com/NikSchaefer/Critical-Role-NLP",
 		"external": "",
 		"tech": ["Tensorflow", "Python", "Numpy"],
 		"slug": "critical-role-nlp",
 		"text": "Text generation based on the D&D series Critical Role",
 		"image": "https://plus.unsplash.com/premium_photo-1682407404553-6df3d4140b97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80",
-		"short": "...more"
+		"short": "See AI Function"
 	},
 	{
 		"title": "Go-Fiber Boilerplate",
-		"github": "",
+		"github": "https://github.com/NikSchaefer/go-fiber",
 		"external": "",
 		"tech": ["Golang", "Fiber"],
 		"slug": "go-fiber",
@@ -51,7 +51,7 @@
 
 	{
 		"title": "Spotify Review Prediction ",
-		"github": "",
+		"github": "https://github.com/NikSchaefer/Spotify-Review-Prediction",
 		"external": "",
 		"tech": ["Tensorflow", "Python", "Numpy"],
 		"slug": "spotify-review-prediction",
@@ -60,7 +60,7 @@
 	},
 	{
 		"title": "Neural Style Transfer",
-		"github": "",
+		"github": "https://github.com/NikSchaefer/neural-style-transfer",
 		"external": "",
 		"tech": ["Tensorflow", "Python", "Numpy"],
 		"slug": "neural-style-transfer",
@@ -70,29 +70,92 @@
 
 	{
 		"title": "InstaDog",
-		"github": "",
-		"external": "",
+		"github": "https://github.com/NikSchaefer/InstaDog",
+		"external": "https://doge.nikschaefer.com/",
 		"tech": ["React", "Typescript", "HTML + CSS", "API"],
 		"text": "A dog lover's Instagram clone powered by an API, showcasing adorable images — because who can resist cute dogs?",
 		"slug": "instadog",
-		"image": ""
+		"image": "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
 	},
 	{
 		"title": "Octo Stats",
-		"github": "",
-		"external": "",
+		"github": "https://github.com/NikSchaefer/Octo-Stats",
+		"external": "https://octo-stats.vercel.app/",
 		"tech": ["React", "Typescript", "Rest API", "NextJS"],
 		"text": "Website to better visualize GitHub Stats",
 		"slug": "octo-stats",
-		"image": ""
+		"image": "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
 	},
 	{
 		"title": "Vehicle Detection ML",
-		"github": "",
+		"github": "https://github.com/NikSchaefer/Vehicle-Detection-ML",
 		"external": "",
 		"tech": ["Tensorflow", "Keras", "Python", "Numpy", "Matplotlib"],
 		"slug": "vehicle-detection-ml",
 		"text": "Machine Learning model built to detect if an image has a vehicle",
-		"image": ""
+		"image": "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+	},
+
+	{
+		"text": "My Personal Golang CLI for productivity and networking",
+		"title": "My-CLI",
+		"github": "https://github.com/NikSchaefer/My-CLI",
+		"external": "",
+		"tech": ["Golang", "netsh"],
+		"slug": "my-cli",
+		"image": "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+	},
+	{
+		"text": "Golang functions to connect and disconnect from networks",
+		"title": "Golang Networking",
+		"github": "https://github.com/NikSchaefer/netsh",
+		"external": "",
+		"tech": ["Golang", "OS"],
+		"slug": "go-netsh",
+		"image": "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+	},
+	{
+		"text": "MIT NextJS Typescript Template with Prettier",
+		"title": "NextJS Boilerplate",
+		"github": "https://github.com/NikSchaefer/nextjs-boilerplate",
+		"external": "https://boilerplate.nikschaefer.tech/",
+		"tech": [
+			"Typescript",
+			"NextJS",
+			"Styled Components",
+			"Google Analytics",
+			"ESLint",
+			"Jest",
+			"React Icons"
+		],
+		"slug": "nextjs-boilerplate",
+		"image": "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+	},
+	{
+		"text": "The umbrella project is an App that Accesses the Open Weather API.",
+		"title": "Umbrella App",
+		"github": "https://github.com/NikSchaefer/umbrella_website",
+		"external": "https://theumbrella.vercel.app/",
+		"tech": ["React Native", "ReactJS", "Javascript"],
+		"slug": "umbrella-app",
+		"image": "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+	},
+	{
+		"text": "A site containing direct comparisons between Databases, Frameworks, Tools and more",
+		"title": "Web Tools",
+		"github": "https://github.com/NikSchaefer/Web-Tools",
+		"external": "https://development-tools.vercel.app/",
+		"tech": ["Typescript", "React", "CRA"],
+		"slug": "web-tools",
+		"image": "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+	},
+	{
+		"title": "Dogs and Cats ML",
+		"github": "https://github.com/NikSchaefer/Dogs-vs-Cats-ML",
+		"external": "",
+		"tech": ["Tensorflow", "Keras", "Python", "Numpy", "Matplotlib"],
+		"slug": "dogs-vs-cats-ml",
+		"text": "ML model to distinguish images as dogs or cats",
+		"image": "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
 	}
 ]
