@@ -2,11 +2,9 @@
 <img width="150" src="https://snowportfolio.vercel.app/" />
 </p>
 
-<h2 align="center"><a href="https://snowportfolio.vercel.app/">Michael John</a></h2>
+<h2 align="center"><a href="https://snowportfolio.vercel.app/">Andres Lopez</a></h2>
 
 <p align="center">Full Stack Developer</p>
-
-<img src="https://nikschaefer.com/site.JPG" />
 
 _Strained eyes? There's DarkMode too :p_
 
@@ -19,7 +17,7 @@ _Strained eyes? There's DarkMode too :p_
 Fork the repository. then clone the repo locally by doing -
 
 ```
-git clone https://github.com/NikSchaefer/nikschaefer.com
+git clone https://github.com/AndresSnow0219/Portfolio
 ```
 
 ### Step 2: Install Dependencies
@@ -27,7 +25,7 @@ git clone https://github.com/NikSchaefer/nikschaefer.com
 cd into the directory
 
 ```
-cd nikschaefer.com
+cd Portfolio
 ```
 
 install all the dependencies
