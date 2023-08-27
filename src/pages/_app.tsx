@@ -4,13 +4,15 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState, useRef, useEffect } from "react";
-import GLOBE from "vanta/dist/vanta.globe.min.js";
+import * as GLOBE from "@lib/vanta";
 import * as THREE from "three";
 import "../styles/globals.css";
+
+console.log("123123123123", GLOBE);
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 	const router = useRouter();
-	const [vantaEffect, setVantaEffect] = useState(0);
-	const vantaRef = useRef(null);
+	const [vantaEffect, setVantaEffect] = useState<any>(null);
+	const vantaRef = useRef<HTMLDivElement | null>(null);
 	useEffect(() => {
 		const handleRouteChange = (url: unknown) => {
 			pageview(url);
@@ -35,7 +37,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 		}
 		return () => {
 			router.events.off("routeChangeComplete", handleRouteChange);
-			if (vantaEffect) setVantaEffect(0);
+			if (vantaEffect) setVantaEffect(null);
 		};
 	}, [router.events, vantaEffect]);
 	return (

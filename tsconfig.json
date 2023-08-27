@@ -39,7 +39,7 @@
       ],
       "@pages/*": [
         "pages/*"
-      ]
+      ],
     },
     "incremental": true
   },
@@ -49,9 +49,11 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
+    "src/**/*.ts",
     "src/pages/_document.tsx",
     "src/pages/_error.js",
     "src/lib/gtag.js",
-    "src/pages/_app.tsx"
+    "src/pages/_app.tsx",
+    // "src/lib/*.d.ts"
   ]
 }
