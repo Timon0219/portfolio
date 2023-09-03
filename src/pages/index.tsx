@@ -19,7 +19,7 @@ function Intro() {
 					"A full stack developer",
 					1000,
 				]}
-				speed={300}
+				speed={99}
 				repeat={Infinity}
 				className={clsx(
 					"title mx-auto font-semibold text-center self-stretch"
