@@ -10,7 +10,7 @@ export default function About(): JSX.Element {
 	return (
 		<Layout>
 			<NextSeo title="About" />
-			<section className="pt-[5em] container mx-auto">
+			<section className="pt-[5em] container mx-auto relative">
 				<motion.h1
 					viewport={{ once: true }}
 					initial={{ y: -10, opacity: 0 }}

@@ -10,7 +10,7 @@ export default function Layout({
 	return (
 		<>
 			<Header />
-			<main className="font-inter min-h-[50vh]">{children}</main>
+			<main className="font-inter min-h-[50vh] relative">{children}</main>
 			<Footer />
 		</>
 	);

@@ -64,7 +64,7 @@ function Column({ col, title }: { col: ColType[]; title: string }) {
 
 export default function Main(): JSX.Element {
 	return (
-		<footer className="py-40 text-white w-[90%] max-w-[1200px] mx-auto font-inter">
+		<footer className="py-40 text-white w-[90%] max-w-[1200px] mx-auto font-inter relative">
 			<div className="text-gray-300">
 				<ul className="grid grid-cols-1 sm:grid-cols-4 gap-2">
 					<li className="sm:col-span-2 p-4">
