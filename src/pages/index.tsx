@@ -1,5 +1,4 @@
 import Layout from "@components/layout";
-import clsx from "clsx";
 import { NextSeo } from "next-seo";
 import React from "react";
 
@@ -7,24 +6,11 @@ import { motion } from "framer-motion";
 import Projects from "@components/projects";
 import Timeline from "@components/work";
 import CTA from "@components/cta";
-import { TypeAnimation } from "react-type-animation";
-
+import WaveText from "@components/wavetext";
 function Intro() {
 	return (
 		<section className="flex flex-col items-center justify-center pt-[5em] container mx-auto">
-			<TypeAnimation
-				sequence={[
-					"Hi, I'm Andres",
-					1000,
-					"A full stack developer",
-					1000,
-				]}
-				speed={99}
-				repeat={Infinity}
-				className={clsx(
-					"title mx-auto font-semibold text-center self-stretch"
-				)}
-			/>
+			<WaveText />
 			<motion.p
 				initial={{ y: -10, opacity: 0 }}
 				animate={{ opacity: 1, y: 0 }}

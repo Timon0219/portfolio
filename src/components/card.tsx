@@ -23,10 +23,6 @@ const sortByOptions: SortOption[] = [
 		name: "Python",
 		include: ["Python", "Tensorflow", "Pandas"],
 	},
-	{
-		name: "Go",
-		include: ["Go", "Golang", "go", "golang"],
-	},
 ];
 
 function Card({

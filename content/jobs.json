@@ -1,16 +1,16 @@
 [
 	{
 		"title": "Full stack Blochchain Developer",
-		"company": "AppRecode",
+		"company": "Blockstars Technology",
 		"location": "Remote",
 		"range": "Oct 2021 • May 2023",
-		"url": "https://apprecode.com/",
-		"logo": "/mark/apprecode.jpg",
+		"url": "https://blockstars.com.au/",
+		"logo": "/mark/blockstars.jpg",
 		"content": [
-			"Constructed a wide modular Python trading engine to auto- rebalance AppRecode 's $13M portfolio utilizing private and public market makers on the Ethereum network",
-			"Built 3 reusable cross-chain libraries and expanded the user base of the DeFi protocol by 37%",
-			"Completed 5 decentralized social media web applications using React, CSS, Bootstrap and web3.js/ethers.js based on Lens protocol for integrating Ethereum",
-			"Built a private blockchain using Hyperledger Fabric 1.0 that enhanced data security and reduced risk exposure by 92%"
+			"Audited over 30 versatile smart contracts, ensuring an accuracy rate of more than 95%",
+			"Forged 5 unique Non-Fungible Tokens (NFTs), totally possessing an intrinsic worth that soared beyond the impressive sum of $5,600",
+			"Built 3 reusable cross-chain libraries and expanded the user base of the DeFi protocol by 47%",
+			"Crafted 7 decentralized social web applications using React, Next.js, and web3.js leveraging Lens protocol for integrating Ethereum"
 		],
 		"tools": [
 			"Solidity",

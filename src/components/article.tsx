@@ -81,12 +81,6 @@ function Article({
 			<section className="prose-blue prose prose-invert text-left text-gray-100">
 				<MDXRemote {...source} />
 			</section>
-
-			<div className="w-fit mx-auto text-center h5 underline-effect">
-				<a href="https://github.com/NikSchaefer/nikschaefer.com">
-					Edit this page on GitHub
-				</a>
-			</div>
 		</article>
 	);
 }

@@ -11,7 +11,7 @@ export { GA_TRACKING_ID, IS_PRODUCTION, IS_TEST, IS_BROWSER };
 
 const socials = {
 	github: {
-		link: "https://github.com/AndresSnow0219",
+		link: "https://github.com/FrostSnow0219",
 		name: "GitHub",
 	},
 	linkedin: {

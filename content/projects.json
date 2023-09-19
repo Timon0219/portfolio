@@ -39,15 +39,6 @@
 		"image": "https://plus.unsplash.com/premium_photo-1682407404553-6df3d4140b97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80",
 		"short": "See AI Function"
 	},
-	{
-		"title": "Go-Fiber Boilerplate",
-		"github": "https://github.com/NikSchaefer/go-fiber",
-		"external": "",
-		"tech": ["Golang", "Fiber"],
-		"slug": "go-fiber",
-		"text": "Golang Rest API built with GORM, Go-Fiber, and a PostgresSQL database.",
-		"image": "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
-	},
 
 	{
 		"title": "Spotify Review Prediction ",
@@ -96,24 +87,6 @@
 		"image": "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
 	},
 
-	{
-		"text": "My Personal Golang CLI for productivity and networking",
-		"title": "My-CLI",
-		"github": "https://github.com/NikSchaefer/My-CLI",
-		"external": "",
-		"tech": ["Golang", "netsh"],
-		"slug": "my-cli",
-		"image": "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
-	},
-	{
-		"text": "Golang functions to connect and disconnect from networks",
-		"title": "Golang Networking",
-		"github": "https://github.com/NikSchaefer/netsh",
-		"external": "",
-		"tech": ["Golang", "OS"],
-		"slug": "go-netsh",
-		"image": "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
-	},
 	{
 		"text": "MIT NextJS Typescript Template with Prettier",
 		"title": "NextJS Boilerplate",

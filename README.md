@@ -17,7 +17,7 @@ _Strained eyes? There's DarkMode too :p_
 Fork the repository. then clone the repo locally by doing -
 
 ```
-git clone https://github.com/AndresSnow0219/Portfolio
+git clone https://github.com/FrpstSnow0219/Portfolio
 ```
 
 ### Step 2: Install Dependencies
